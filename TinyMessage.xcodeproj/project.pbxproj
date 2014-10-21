@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8757C3719F67F19009723F2 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8757C3519F67F19009723F2 /* MessageTableViewController.swift */; };
+		D8757C3C19F6849A009723F2 /* MsgListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8757C3A19F6849A009723F2 /* MsgListTableViewCell.swift */; };
+		D8757C3D19F6849A009723F2 /* MsgListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8757C3B19F6849A009723F2 /* MsgListTableViewCell.xib */; };
 		D891695E19EA1AF800992A72 /* CoreDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891695D19EA1AF800992A72 /* CoreDBService.swift */; };
 		D891696019EA256C00992A72 /* CoreDBInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891695F19EA256C00992A72 /* CoreDBInterface.swift */; };
 		D891696219F3FDD700992A72 /* CoreDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891696119F3FDD700992A72 /* CoreDataTest.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8757C3519F67F19009723F2 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		D8757C3A19F6849A009723F2 /* MsgListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgListTableViewCell.swift; sourceTree = "<group>"; };
+		D8757C3B19F6849A009723F2 /* MsgListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MsgListTableViewCell.xib; sourceTree = "<group>"; };
 		D891695D19EA1AF800992A72 /* CoreDBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDBService.swift; sourceTree = "<group>"; };
 		D891695F19EA256C00992A72 /* CoreDBInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDBInterface.swift; sourceTree = "<group>"; };
 		D891696119F3FDD700992A72 /* CoreDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTest.swift; sourceTree = "<group>"; };
@@ -73,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8757C3919F68465009723F2 /* MessageListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D8757C3519F67F19009723F2 /* MessageTableViewController.swift */,
+				D8757C3A19F6849A009723F2 /* MsgListTableViewCell.swift */,
+				D8757C3B19F6849A009723F2 /* MsgListTableViewCell.xib */,
+			);
+			name = MessageListViewController;
+			sourceTree = "<group>";
+		};
 		D8A836F419DB982E00C80B77 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				D8A8372419DB989400C80B77 /* Service */,
+				D8757C3919F68465009723F2 /* MessageListViewController */,
 				D8A8370219DB982E00C80B77 /* AppDelegate.swift */,
 				D8A8370419DB982E00C80B77 /* FirstViewController.swift */,
 				D8A8370619DB982E00C80B77 /* SecondViewController.swift */,
@@ -234,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A8370A19DB982E00C80B77 /* Main.storyboard in Resources */,
+				D8757C3D19F6849A009723F2 /* MsgListTableViewCell.xib in Resources */,
 				D8A8370F19DB982E00C80B77 /* LaunchScreen.xib in Resources */,
 				D8A8370C19DB982E00C80B77 /* Images.xcassets in Resources */,
 			);
@@ -255,8 +273,10 @@
 			files = (
 				D891696419F405D600992A72 /* MessageEntity.swift in Sources */,
 				D891696019EA256C00992A72 /* CoreDBInterface.swift in Sources */,
+				D8757C3719F67F19009723F2 /* MessageTableViewController.swift in Sources */,
 				D8A8370719DB982E00C80B77 /* SecondViewController.swift in Sources */,
 				D891695E19EA1AF800992A72 /* CoreDBService.swift in Sources */,
+				D8757C3C19F6849A009723F2 /* MsgListTableViewCell.swift in Sources */,
 				D8A8370319DB982E00C80B77 /* AppDelegate.swift in Sources */,
 				D8A8370519DB982E00C80B77 /* FirstViewController.swift in Sources */,
 				D8A8372E19DC031000C80B77 /* CoreDataService.swift in Sources */,

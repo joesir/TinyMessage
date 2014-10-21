@@ -24,17 +24,12 @@ class FirstViewController: UIViewController {
                 tmpEnity.content = "hei my messageEnity"
                 tmpEnity.title = "hei title"
             }
-        })
-        
+        })        
 //        self.getAllData()
     }
     
     
-    func getAllData()
-    {
-        var result: AnyObject! = coreDB.queryEnity(nil, enityName: "MessageEntity")
-        println(result)
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -9,13 +9,10 @@
 import Foundation
 import CoreData
 
+@objc(MessageEntity)
+
 class MessageEntity: NSManagedObject {
 
     @NSManaged var content: String
     @NSManaged var title: String
-
-    func hell()
-    {
-        
-    }
 }

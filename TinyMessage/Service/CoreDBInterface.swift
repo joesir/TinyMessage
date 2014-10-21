@@ -42,8 +42,9 @@ class CoreDBInterface: NSObject {
     func queryEnity(predicate:NSPredicate!,enityName:String)->AnyObject!
     {
         var request:NSFetchRequest = NSFetchRequest()
-        var enity:NSEntityDescription = NSEntityDescription.entityForName(enityName, inManagedObjectContext: CoreDBService.shareService.managedObjectContext!)!
+        var entity:NSEntityDescription = NSEntityDescription.entityForName(enityName, inManagedObjectContext: CoreDBService.shareService.managedObjectContext!)!
         request.predicate = predicate
+        request.entity = entity
         var error:NSError? = nil
         var result = CoreDBService.shareService.managedObjectContext?.executeFetchRequest(request, error: &error)
         if error == nil
